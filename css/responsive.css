@@ -1,0 +1,81 @@
+/* ============================================
+   RESPONSIVE DESIGN FOR MOBILE & TABLET
+   ============================================ */
+
+@media (max-width: 768px) {
+    /* Navigation */
+    .nav-links {
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background: var(--dark-color);
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 2rem;
+        transition: right 0.3s ease;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 5rem 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .search-form {
+        grid-template-columns: 1fr;
+        padding: 1.5rem;
+    }
+
+    /* Features & Destinations */
+    .feature-grid,
+    .destination-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* CTA */
+    .cta h2 {
+        font-size: 1.8rem;
+    }
+
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Form */
+    .form-container {
+        margin: 2rem 1rem;
+        padding: 2rem 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .search-form {
+        padding: 1rem;
+    }
+
+    .btn-search {
+        padding: 0.8rem 1.5rem;
+    }
+}
